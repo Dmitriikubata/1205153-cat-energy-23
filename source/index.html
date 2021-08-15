@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
+
 <body>
   <header class="header">
     <div class="logo">
-      <img class="logo__img" src="#" alt="логотип компании Cat Energy">
-    </div>
-    <div class="logo-text">
-      <p>Cat Energy</p>
+      <a href="#">
+        <img class="logo__img" src="#" alt="логотип компании Cat Energy">
+      </a>
     </div>
     <div class="nav">
-      <button class="nav__button nav__button--closed nav__button--opened"></button>
+      <button class="nav__button nav__button--closed" type="button"></button>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="" class="nav__link nav__link--active">Главная</a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">Каталог продукции</a>
+          <a href="source/catalog.html" class="nav__link">Каталог продукции</a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">Подбор программы</a>
+          <a href="source/catalog.html" class="nav__link">Подбор программы</a>
         </li>
       </ul>
     </div>
   </header>
-  <main class="main-block">
-    <h2 class="main-block__title">Функциональное<br>питание для котов</h2>
-    <p class="main-block__text">Занялся собой? Займись котом!</p>
-    <a class="main-block__link" href="#">Подобрать программу</a>
-    <div class="main-block__img-wrapper">
-      <img class="main-block__img" src="#" alt="Ведерко с питанием Cat Energy Pro со вкусом курицы">
+  <main>
+    <section class="main">
+    <h2 class="main__title">Функциональное<br>питание для котов</h2>
+    <p class="main__text">Занялся собой? Займись котом!</p>
+    <a class="main__link" href="source/form.html">Подобрать программу</a>
+    <div class="main__img-wrapper">
+      <img class="main__img" src="#" alt="Ведерко с питанием Cat Energy Pro со вкусом курицы">
     </div>
     </section>
-    <section class="catalogs-block">
+    <section class="catalogs">
       <h2 class="visually-hidden">Виды каталогов</h2>
-      <ul class="catalogs-block__list">
-        <li class="catalogs-block__item">
-          <h3 class="catalogs-block__title">похудение</h3>
-          <p class="catalogs-block__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+      <ul class="catalogs__list">
+        <li class="catalogs__item">
+          <h3 class="catalogs__title">похудение</h3>
+          <p class="catalogs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="catalogs-block_link" href="#">каталог slim</a>
+          <a class="catalogs_link" href="#">каталог slim</a>
         </li>
-        <li class="catalogs-block__item">
-          <h3 class="catalogs-block__title">набор массы</h3>
-          <p class="catalogs-block__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+        <li class="catalogs__item">
+          <h3 class="catalogs__title">набор массы</h3>
+          <p class="catalogs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="catalogs-block_link" href="#">каталог pro</a>
+          <a class="catalogs_link" href="#">каталог pro</a>
         </li>
       </ul>
     </section>
@@ -77,34 +79,36 @@
         </li>
       </ul>
     </section>
-    <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+    <section class="live-case">
+      <h2 class="live-case__title">Живой пример</h2>
+      <p class="live-case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день.</p>
-      <div class="example__list">
-        <div class="example__item">
-          <dt class="example__number">5 КГ</dt>
-          <dd class="example__definition">снижение веса</dd>
-        </div>
-        <div class="example__item">
-          <dt class="example__number">60 ДНЕЙ</dt>
-          <dd class="example__definition">затрачено времени</dd>
-        </div>
+      <ul class="live-case__list">
+        <li class="live-case__item">
+          <p class="live-case__term">5 КГ</p>
+          <p class="live-case__definition">снижение веса</p>
+        </li>
+        <li class="live-case__item">
+          <p class="live-case__term">60 ДНЕЙ</p>
+          <p class="live-case__definition">затрачено времени</p>
+        </li>
+      </ul>
+      <div class="live-case__cost">
+        <span class="live-case__cost-text">Затраты на питание:</span>
+        <span class="live-case__sum">15 000 РУБ.</span>
       </div>
-      <div class="example__cost">
-        <span class="example__cost-text">Затраты на питание:</span>
-        <span class="example__sum">15 000 РУБ.</span>
+      <div class="live-case__range">
+        <button class="live-case__range-button-start">Было</button>
+        <div class="live-case__line"> </div>
+        <div class="live-case__range-item"></div>
+        <button class="live-case__range-button-end">Стало</button>
       </div>
-      <div class="example__range">
-        <p class="example__range-text-start">Было</p>
-        <div class="example__line"> </div>
-        <div class="example__range-item"></div>
-        <p class="example__range-text-end">Стало</p>
-      </div>
+    </section>
   </main>
   <footer class="footer-block">
     <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__content">
         <p class="contacts__title"></p>
         <p class="contacts__address"></p>
@@ -112,14 +116,14 @@
       <div class="map">
         <div class="map__iframe"></div>
         <img class="map__pointer" src="#" alt="флажок точки на карте" width="57" height="53">
-        <img class="map__img" src="#" alt="изображение карты, где находится магазин">
+        <img class="map__img" src="#" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
       </div>
     </section>
     <section class="info">
-      <div class="logo-text logo-text__footer">
-        <p>Cat Energy</p>
+      <h2 class="visually-hidden">Социальные сети и копирайт</h2>
+      <div class="info__logo-text info__logo-text__footer">
+        <a href="#">Cat Energy</a>
       </div>
-      <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="#">Мы в Вконтакте</a>
@@ -131,12 +135,14 @@
             <a class="socials__link socials__link--facebook" href="#">Мы в Фейсбуке</a>
           </li>
         </ul>
-      </div>
       <div class="copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__logo" src="" alt="" width="27" height="34">
+        <img class="copyright__logo" src="#" alt="логотип HTML academy" width="27" height="34">
+      </a>
       </div>
     </section>
   </footer>
 </body>
+
 </html>
