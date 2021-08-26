@@ -37,21 +37,23 @@
       <p class="program__text">Заполните анкету, и мы подберем<br>
         программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="form__list form__list--blank">
-          <li class="form__item">
-            <label class="form__label form__label--name" for="name">Имя:*</label>
-            <input class="form__input form__input--name" id="name" name="name" type="text" placeholder="Барсик">
-          </li>
-          <li class="form__item">
-            <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
-            <input class="form__input form__input--weight" id="weight" name="weight" type="text" placeholder="7">
-          </li>
-          <li class="form__item">
-            <label class="form__label form__label--age" for="age">Возраст (лет):</label>
-            <input class="form__input form__input--name" id="age" name="age" type="text" placeholder="7">
-          </li>
-        </ul>
-        <fieldset class="form__radio-field">
+        <fieldset class="form__fieldset">
+          <ul class="form__list form__list--blank">
+            <li class="form__item">
+              <label class="form__label form__label--name" for="name">Имя:*</label>
+              <input class="form__input form__input--name" id="name" name="name" type="text" placeholder="Барсик">
+            </li>
+            <li class="form__item">
+              <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
+              <input class="form__input form__input--weight" id="weight" name="weight" type="text" placeholder="7">
+            </li>
+            <li class="form__item">
+              <label class="form__label form__label--age" for="age">Возраст (лет):</label>
+              <input class="form__input form__input--name" id="age" name="age" type="text" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
           <ul class="form__list form__list--radio">
             <li class="form__item-radio">
               <input class="form__radio visually-hidden" id="lose-weight" name="food-type" type="radio" checked>
@@ -67,7 +69,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__contact-field">
+        <fieldset class="form__fieldset">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <ul class="form__list form__list--contact-filed">
             <li class="form__item">
@@ -82,12 +84,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__comment-field">
+        <fieldset class="form__fieldset">
           <legend class="form__legend">Комментарий</legend>
           <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__checkbox-field">
+        <fieldset class="form__fieldset">
           <legend class="form__legend">Дополнительно</legend>
           <ul class="form__list form__list--checkbox">
             <li class="form__item-checkbox">
