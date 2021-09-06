@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -28,13 +29,15 @@
       </ul>
     </div>
   </header>
-  <main>
+  <main class="homepage">
     <section class="main">
-      <h2 class="main__title">Функциональное<br>питание для котов</h2>
-      <p class="main__text">Занялся собой? Займись котом!</p>
-      <a class="main__link" href="source/form.html">Подобрать программу</a>
-      <div class="main__img-wrapper">
-        <img class="main__img" src="#" alt="Ведерко с питанием Cat Energy Pro со вкусом курицы">
+      <div class="main__wrapper">
+        <h1 class="main__title">Функциональное<br>питание для котов</h1>
+        <p class="main__text">Занялся собой? Займись котом!</p>
+        <a class="button main__link" href="source/form.html">Подобрать программу</a>
+        <div class="main__img-wrapper">
+          <img class="main__img" src="#" alt="Ведерко с питанием Cat Energy Pro со вкусом курицы">
+        </div>
       </div>
     </section>
     <section class="catalogs">
@@ -44,13 +47,13 @@
           <h3 class="catalogs__title">похудение</h3>
           <p class="catalogs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="catalogs_link" href="#">каталог slim</a>
+          <a class="catalogs__link" href="#">каталог slim</a>
         </li>
         <li class="catalogs__item">
           <h3 class="catalogs__title">набор массы</h3>
           <p class="catalogs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="catalogs_link" href="#">каталог pro</a>
+          <a class="catalogs__link" href="#">каталог pro</a>
         </li>
       </ul>
     </section>
@@ -80,10 +83,12 @@
       </ul>
     </section>
     <section class="live-case">
-      <h2 class="live-case__title">Живой пример</h2>
-      <p class="live-case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день.</p>
+      <div class="live-case__wrapper">
+        <h2 class="live-case__title">Живой пример</h2>
+        <p class="live-case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов
+          в день.</p>
         <dl class="live-case__list">
           <div class="live-case__item">
             <dt class="live-case__term">снижение веса</dt>
@@ -94,24 +99,25 @@
             <dd class="live-case__definition">60 ДНЕЙ</dd>
           </div>
         </dl>
-      <div class="live-case__cost">
-        <span class="live-case__cost-text">Затраты на питание:</span>
-        <span class="live-case__sum">15 000 РУБ.</span>
-      </div>
-      <div class="live-case__range">
-        <button class="live-case__range-button" type="button">Было</button>
-        <div class="live-case__line"> </div>
-        <div class="live-case__range-item"></div>
-        <button class="live-case__range-button" type="button">Стало</button>
+        <div class="live-case__cost">
+          <span class="live-case__cost-text">Затраты на питание:</span>
+          <span class="live-case__sum">15 000 РУБ.</span>
+        </div>
+        <div class="live-case__range">
+          <button class="live-case__range-button" type="button">Было</button>
+          <div class="live-case__line"> </div>
+          <div class="live-case__range-item"></div>
+          <button class="live-case__range-button" type="button">Стало</button>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer-block">
+  <footer class="footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__content">
-        <p class="contacts__title"></p>
-        <p class="contacts__address"></p>
+        <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
       <div class="map">
         <div class="map__iframe"></div>
@@ -136,7 +142,7 @@
         </li>
       </ul>
       <div class="copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <img class="copyright__logo" src="#" alt="логотип HTML academy" width="27" height="34">
         </a>
