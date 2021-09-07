@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
       </ul>
     </div>
   </header>
-  <main>
+  <main class="catalog-page">
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
@@ -41,15 +42,15 @@
           <dl class="table">
             <div class="table__item">
               <dt class="table__term">Масса</dt>
-              <dd class="table_definition">500 г</dd>
+              <dd class="table__definition">500 г</dd>
             </div>
-            <div class="item">
+            <div class="table__item">
               <dt class="table__term">Вкус</dt>
-              <dd class="table_definition">Курица</dd>
+              <dd class="table__definition">Курица</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Цена</dt>
-              <dd class="table_definition">700 Р.</dd>
+              <dd class="table__definition">700 Р.</dd>
             </div>
           </dl>
           <a class="button catalog__button" href="#">Заказать</a>
@@ -63,15 +64,15 @@
           <dl class="table">
             <div class="table__item">
               <dt class="table__term">Масса</dt>
-              <dd class="table_definition">1000 г</dd>
+              <dd class="table__definition">1000 г</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Вкус</dt>
-              <dd class="table_definition">Курица</dd>
+              <dd class="table__definition">Курица</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Цена</dt>
-              <dd class="table_definition">1000 Р.</dd>
+              <dd class="table__definition">1000 Р.</dd>
             </div>
           </dl>
           <a class="button catalog__button" href="#">Заказать</a>
@@ -85,15 +86,15 @@
           <dl class="table">
             <div class="table__item">
               <dt class="table__term">Масса</dt>
-              <dd class="table_definition">500 г</dd>
+              <dd class="table__definition">500 г</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Вкус</dt>
-              <dd class="table_definition">Рыба</dd>
+              <dd class="table__definition">Рыба</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Цена</dt>
-              <dd class="table_definition">700 Р.</dd>
+              <dd class="table__definition">700 Р.</dd>
             </div>
           </dl>
           <a class="button catalog__button" href="#">Заказать</a>
@@ -107,15 +108,15 @@
           <dl class="table">
             <div class="table__item">
               <dt class="table__term">Масса</dt>
-              <dd class="table_definition">1000 г</dd>
+              <dd class="table__definition">1000 г</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Вкус</dt>
-              <dd class="table_definition">рыба</dd>
+              <dd class="table__definition">рыба</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Цена</dt>
-              <dd class="table_definition">1000 Р.</dd>
+              <dd class="table__definition">1000 Р.</dd>
             </div>
           </dl>
           <a class="button catalog__button" href="#">Заказать</a>
@@ -129,15 +130,15 @@
           <dl class="table">
             <div class="table__item">
               <dt class="table__term">Масса</dt>
-              <dd class="table_definition">500 г</dd>
+              <dd class="table__definition">500 г</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Вкус</dt>
-              <dd class="table_definition">Гречка</dd>
+              <dd class="table__definition">Гречка</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Цена</dt>
-              <dd class="table_definition">400 Р.</dd>
+              <dd class="table__definition">400 Р.</dd>
             </div>
           </dl>
           <a class="button catalog__button" href="#">Заказать</a>
@@ -151,15 +152,15 @@
           <dl class="table">
             <div class="table__item">
               <dt class="table__term">Масса</dt>
-              <dd class="table_definition">1000 г</dd>
+              <dd class="table__definition">1000 г</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Вкус</dt>
-              <dd class="table_definition">Гречка</dd>
+              <dd class="table__definition">Гречка</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Цена</dt>
-              <dd class="table_definition">700 Р.</dd>
+              <dd class="table__definition">700 Р.</dd>
             </div>
           </dl>
           <a class="button catalog__button" href="#">Заказать</a>
@@ -173,15 +174,15 @@
           <dl class="table">
             <div class="table__item">
               <dt class="table__term">Масса</dt>
-              <dd class="table_definition">500 г</dd>
+              <dd class="table__definition">500 г</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Вкус</dt>
-              <dd class="table_definition">Рис</dd>
+              <dd class="table__definition">Рис</dd>
             </div>
             <div class="table__item">
               <dt class="table__term">Цена</dt>
-              <dd class="table_definition">500 Р.</dd>
+              <dd class="table__definition">500 Р.</dd>
             </div>
           </dl>
           <a class="button catalog__button" href="#">Заказать</a>
@@ -222,14 +223,13 @@
         </li>
       </ul>
       <div class="gift">
-        <img class="gift__img" src="#" alt="картинка подарка">
         <p class="gift__text">Закажите все<br>
           и получите чехол для<br>
           кота в подарок!</p>
       </div>
     </section>
   </main>
-  <footer class="footer-block">
+  <footer class="footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__content">
@@ -259,7 +259,7 @@
         </li>
       </ul>
       <div class="copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <img class="copyright__logo" src="#" alt="логотип HTML academy" width="27" height="34">
         </a>
