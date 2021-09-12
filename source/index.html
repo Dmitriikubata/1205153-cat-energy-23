@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="logo">
       <a href="#">
@@ -89,19 +90,21 @@
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов
           в день.</p>
-        <dl class="live-case__list">
-          <div class="live-case__item">
-            <dt class="live-case__term">снижение веса</dt>
-            <dd class="live-case__definition">5 КГ</dd>
+        <div class="live-case__text-wrapper">
+          <dl class="live-case__list">
+            <div class="live-case__item">
+              <dt class="live-case__term">снижение веса</dt>
+              <dd class="live-case__definition">5 КГ</dd>
+            </div>
+            <div class="live-case__item">
+              <dt class="live-case__term">затрачено времени</dt>
+              <dd class="live-case__definition">60 ДНЕЙ</dd>
+            </div>
+          </dl>
+          <div class="live-case__cost">
+            <span class="live-case__cost-text">Затраты на питание:</span>
+            <span class="live-case__sum">15 000 РУБ.</span>
           </div>
-          <div class="live-case__item">
-            <dt class="live-case__term">затрачено времени</dt>
-            <dd class="live-case__definition">60 ДНЕЙ</dd>
-          </div>
-        </dl>
-        <div class="live-case__cost">
-          <span class="live-case__cost-text">Затраты на питание:</span>
-          <span class="live-case__sum">15 000 РУБ.</span>
         </div>
         <div class="live-case__range">
           <button class="live-case__range-button" type="button">Было</button>
@@ -116,14 +119,14 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__content">
-        <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <p class="contacts__title">приглашаем <br>к сотрудничеству <br>дилеров!</p>
+        <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
       </div>
-      <div class="map">
-        <div class="map__iframe"></div>
-        <img class="map__pointer" src="#" alt="флажок точки на карте" width="57" height="53">
-        <img class="map__img" src="#" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
-      </div>
+    </section>
+    <section class="map">
+      <div class="map__iframe"></div>
+      <img class="map__pointer" src="#" alt="флажок точки на карте" width="57" height="53">
+      <img class="map__img" src="#" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
     </section>
     <section class="info">
       <h2 class="visually-hidden">Социальные сети и копирайт</h2>
