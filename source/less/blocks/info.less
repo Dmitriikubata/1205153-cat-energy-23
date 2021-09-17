@@ -2,4 +2,15 @@
   background-color: @basic_grey;
   padding-bottom: 22px;
   padding-top: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
